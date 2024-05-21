@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
@@ -349,8 +349,31 @@
         map.addControl(new mapboxgl.NavigationControl());
       </script>
    
+<<<<<<< HEAD
     
     <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+=======
+    <script>
+        // Fetch About Me content from local storage and display it
+        function displayAboutMeContent() {
+            const aboutMeContent = localStorage.getItem('aboutMeContent');
+            if (aboutMeContent) {
+                document.getElementById('aboutMeContentDisplay').innerHTML = aboutMeContent;
+            } else {
+                document.getElementById('aboutMeContentDisplay').innerHTML = '<p>No About Me content available. Please update it from the Admin Panel.</p>';
+            }
+        }
+
+        
+        // Initialize the page with data from local storage
+        document.addEventListener('DOMContentLoaded', () => {
+            displayAboutMeContent();
+        
+        }
+
+    </script>
+    // <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+>>>>>>> origin/main
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 
